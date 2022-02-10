@@ -1,0 +1,10 @@
+<div *ngIf="loggedIn" class="posts">
+  <div class="menu">
+   <p>Menu's</p>
+   <a routerLink='/posts'>Posts</a>
+   <a routerLink='/photos'>Albums</a>
+  </div>
+  <div class="posts_list">
+    <app-photo-item [ngStyle]="{'width':'100%','color': '#00000','margin':'10px','height':'fit-content' ,'background-color': 'rgb(197, 255, 236)'}" *ngFor="let post of posts" [post]="post"></app-photo-item>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="mobile"></label>
+  <input  type="text" name="mobile" [(ngModel)]="mobile" id="mobile" placeholder="mobile"/>
+  <label for="mobile"></label>
+  <input type="password" name="password" [(ngModel)]="password"  id="password" placeholder="password"/>
+  <input [ngStyle]="{'width':'40%'}" type="submit" value="login"/>
+</form>
